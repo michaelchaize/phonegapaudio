@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Audio sample</title>
+
+<script src="phonegap.js"></script>
+
+<script>
+
+
+	var playCounter = 0;
+
+ 	// FIRST audio file you want to declare
+ 	var my_media = new Media("app/www/test.mp3");
+
+    function playMP3(){
+      console.log("playMP3() counter " + playCounter);
+      my_media.play();
+      playCounter++;
+    }
+    
+    
+
+</script>
+</head>
+
+<body>
+
+<p onclick="playMP3();">Click to Play MP3</p>
+
+
+
+</body>
+</html>
